@@ -79,7 +79,7 @@ function removeGroupCall(groupID) {
       }
     });
     
-    xhr.open("DELETE", "https://" + instance + "/api/v1" + courseID + "/assignment_groups/" + groupID + "?move_assignments_to=1788596");
+    xhr.open("DELETE", "https://" + instance + "/api/v1" + courseID + "/assignment_groups/" + groupID + "?move_assignments_to="+moveToGroup);
     xhr.setRequestHeader("Authorization", "Bearer " + token);
    
     
